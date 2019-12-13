@@ -11,6 +11,6 @@ router.get('/', homeController.index);
  * Blog Routes
  */
 router.get('/blog/create', blogController.create);
-router.post('/blog/submit')
+router.post('/blog/submit', blogController.submit);
 
 module.exports = router;

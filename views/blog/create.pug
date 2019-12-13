@@ -1,6 +1,13 @@
 extends ../layout
 
 block content
+
+    a(href="../") Back
     h2 Write an Article
 
-    form(action="./", method="post")
+    form(action="./submit", method="post")
+        input(type="text", name="title", placeholder="Article title...", class="form-input")
+        br
+        textarea(name="content", cols="60", rows="7", class="form-text", placeholder="What's on your mind?")
+        br
+        button(type="submit", class="btn btn-dark") Publish
