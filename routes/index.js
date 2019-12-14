@@ -13,6 +13,7 @@ router.get('/', homeController.index);
 router.get('/blog/view/:id', blogController.view);
 router.get('/blog/create', blogController.create);
 router.get('/blog/edit/:id', blogController.edit);
+router.get('/blog/delete/:id', blogController.delete);
 
 router.post('/blog/submit', blogController.submit);
 router.post('/blog/update', blogController.update);

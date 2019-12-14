@@ -35,6 +35,16 @@ exports.edit = function(req, res){
     })
 }
 
+exports.delete = function(req, res){
+    return models.Blog.destroy({
+        where: {
+            id: req.params.id
+        }
+    }).then(() => {
+        res.redirect('/');
+    })
+}
+
 exports.update = function(req, res){
     return models.Blog.update({
         title: req.body.title,

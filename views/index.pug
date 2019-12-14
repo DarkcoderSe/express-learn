@@ -10,4 +10,8 @@ block content
     for blog in blogs
       h2 
         a(href="./blog/view/" + blog.id) #{blog.title} 
-        a(href="./blog/edit/" + blog.id) edit
+        a(href="./blog/edit/" + blog.id)
+          ion-icon(name="create", style="font-size: 2rem;color: rgba(0, 100, 255, 0.5);")
+        a(href="./blog/delete/" + blog.id)
+          ion-icon(name="trash", style="font-size: 2rem;color: rgba(255, 0, 0, 0.5);")
+
