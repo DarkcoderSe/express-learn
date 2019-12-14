@@ -2,6 +2,11 @@ extends layout
 
 block content
   h1 A Personal Blog
-  p Hey, I'm Kashif Saleem. This is my first personal blog blog based on Express JS.
+  p Hey, I'm Kashif Saleem. This is my first personal blog based on Express JS.
 
   a(href="./blog/create") Write an article
+
+  div(class="blogs")
+    for blog in blogs
+      h2 
+        a(href="") #{blog.title}

@@ -1,3 +1,7 @@
+const models = require('../models')
+
 exports.index = function(request, res, next){
-    res.render('index');
+    return models.Blog.findAll().then(blogs => {
+        res.render('index', { blogs: blogs });
+    });
 }
