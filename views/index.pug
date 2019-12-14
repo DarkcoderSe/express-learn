@@ -9,4 +9,4 @@ block content
   div(class="blogs")
     for blog in blogs
       h2 
-        a(href="") #{blog.title}
+        a(href="./blog/view/" + blog.id) #{blog.title}

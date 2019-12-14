@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    div(class="blog")
+        a(href="/") Back
+        h1 #{blog.title}
+        div(class="extra") 
+            span Posted at: #{blog.createdAt}
+        p #{blog.content}

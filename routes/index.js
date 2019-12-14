@@ -10,6 +10,7 @@ router.get('/', homeController.index);
 /**
  * Blog Routes
  */
+router.get('/blog/view/:id', blogController.view);
 router.get('/blog/create', blogController.create);
 router.post('/blog/submit', blogController.submit);
 
