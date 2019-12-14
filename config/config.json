@@ -16,11 +16,11 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
+    "username": "fwmmtnugrdbmua",
+    "password": "f7c9de22b48ac202f9c247b0b8bcc6ecf697dbf892574c6d36c0604464193084",
+    "database": "d5flhf92gpp1b9",
+    "host": "ec2-54-247-72-30.eu-west-1.compute.amazonaws.com",
+    "dialect": "postgres",
     "operatorsAliases": false
   }
 }
